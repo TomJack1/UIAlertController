@@ -1,7 +1,7 @@
 
 
 Pod::Spec.new do |s|
-  version = "0.0.1"
+  version        = "0.0.1"
   s.name         = "LEAlertController"
   s.version      = version
   s.summary      = "仿微信 sheetView of LEAlertController."
@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TomJack1/UIAlertController.git", :tag => version }
 
-  s.subspec 'keyAnimation' do |ss|
-    ss.source_files  = 'class/*'
+  s.source_files  = 'class/*'
 
   s.requires_arc = true
 
