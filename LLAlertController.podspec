@@ -1,7 +1,7 @@
 
 
 Pod::Spec.new do |s|
-  version        = "v0.0.2"
+  version        = "0.0.2"
   s.name         = "LLAlertController"
   s.version      = version
   s.summary      = "仿微信 sheetView of LEAlertController."
