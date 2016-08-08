@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.authors            = { "lilei" => "445765368@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/TomJack1/UIAlertController.git", :tag => version }
-  s.source_files     = 'Class/*.swift'
+  s.source_files     = 'Class/*{.swift}'
   s.requires_arc = true
  end
