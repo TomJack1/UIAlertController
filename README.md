@@ -11,4 +11,5 @@
         NSLog("btnAction2");
   }
   shet.addAction(b2)
+  
   self.presentViewController(shet, animated: true, completion: nil)
