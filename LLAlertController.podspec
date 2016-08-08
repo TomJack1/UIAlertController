@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   version        = "0.0.1"
-  s.name         = "LEAlertController"
+  s.name         = "LLAlertController"
   s.version      = version
   s.summary      = "仿微信 sheetView of LEAlertController."
   s.homepage     = "https://github.com/TomJack1/UIAlertController"
