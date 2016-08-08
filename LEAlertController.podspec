@@ -17,6 +17,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/TomJack1/UIAlertController.git", :tag => version }
+
+  s.subspec 'XYRouter' do |ss|
+    ss.source_files  = 'XYRouter/*'
+
+
   s.source_files  = "class", "class/*.{h,m}"
   s.requires_arc = true
 
