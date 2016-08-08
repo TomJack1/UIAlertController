@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
+    }   
 
 
     @IBOutlet var open: UIButton!
