@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		E2175F751D582EF90021DF8A /* LEAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEAlertController.swift; sourceTree = "<group>"; };
-		E263CB9A1D3A35A00024C495 /* keyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E263CB9A1D3A35A00024C495 /* LEAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E263CB9D1D3A35A00024C495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E263CB9F1D3A35A00024C495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E263CBA21D3A35A00024C495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		E263CB9B1D3A35A00024C495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E263CB9A1D3A35A00024C495 /* keyAnimation.app */,
+				E263CB9A1D3A35A00024C495 /* LEAlertController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E263CB991D3A35A00024C495 /* keyAnimation */ = {
+		E263CB991D3A35A00024C495 /* LEAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "keyAnimation" */;
+			buildConfigurationList = E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LEAlertController" */;
 			buildPhases = (
 				E263CB961D3A35A00024C495 /* Sources */,
 				E263CB971D3A35A00024C495 /* Frameworks */,
@@ -92,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = keyAnimation;
+			name = LEAlertController;
 			productName = keyAnimation;
-			productReference = E263CB9A1D3A35A00024C495 /* keyAnimation.app */;
+			productReference = E263CB9A1D3A35A00024C495 /* LEAlertController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "keyAnimation" */;
+			buildConfigurationList = E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LEAlertController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E263CB991D3A35A00024C495 /* keyAnimation */,
+				E263CB991D3A35A00024C495 /* LEAlertController */,
 			);
 		};
 /* End PBXProject section */
@@ -267,7 +267,7 @@
 				INFOPLIST_FILE = keyAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsl.www.keyAnimation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LEAlertController;
 				SWIFT_OBJC_BRIDGING_HEADER = "keyAnimation/keyAnimation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -281,7 +281,7 @@
 				INFOPLIST_FILE = keyAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsl.www.keyAnimation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LEAlertController;
 				SWIFT_OBJC_BRIDGING_HEADER = "keyAnimation/keyAnimation-Bridging-Header.h";
 			};
 			name = Release;
@@ -289,7 +289,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "keyAnimation" */ = {
+		E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LEAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E263CBAA1D3A35A00024C495 /* Debug */,
@@ -298,7 +298,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "keyAnimation" */ = {
+		E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LEAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E263CBAD1D3A35A00024C495 /* Debug */,
