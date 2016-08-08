@@ -2,8 +2,7 @@
 仿微信 SheetView ，与UIAlertController用法相同，兼容7.0 
 
 #Preview
- !(lLalerView.gif)
- 
+ ![Preview](lLalerView.gif)
 # Podfile
 pod 'LLAlertController', '~> 0.0.2'
 #Usage
