@@ -1,6 +1,6 @@
 # 控件使用swift 
 仿微信 SheetView ，与UIAlertController用法相同，兼容7.0 
-Usage
+#Usage
  let shet = LEAlertController.init(title: "标题党", message: "content lable", alertType: LEAlertControllerStyle.ActionSheet)
  let  cancle = LEAlertAction.init(title: "取消", styleAction: LEAlertActionStyle.Cancel, handler: nil)
  shet.addAction(cancle)
