@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/TomJack1/UIAlertController.git", :tag => version }
   s.requires_arc = true
   s.subspec 'LEAlertController' do |ss|
-    ss.source_files  = 'class/*'
+    ss.source_files  = 'class/*' 
+ end
 end
