@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E263CB9E1D3A35A00024C495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263CB9D1D3A35A00024C495 /* AppDelegate.swift */; };
-		E263CBA01D3A35A00024C495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263CB9F1D3A35A00024C495 /* ViewController.swift */; };
-		E263CBA31D3A35A00024C495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E263CBA11D3A35A00024C495 /* Main.storyboard */; };
-		E263CBA51D3A35A00024C495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E263CBA41D3A35A00024C495 /* Assets.xcassets */; };
-		E263CBA81D3A35A00024C495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E263CBA61D3A35A00024C495 /* LaunchScreen.storyboard */; };
 		E2A0DB8E1D5877A000320CC4 /* LEAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0DB8D1D5877A000320CC4 /* LEAlertController.swift */; };
+		E2A0DB991D587F4500320CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0DB901D587F4500320CC4 /* AppDelegate.swift */; };
+		E2A0DB9A1D587F4500320CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A0DB911D587F4500320CC4 /* Assets.xcassets */; };
+		E2A0DB9B1D587F4500320CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A0DB921D587F4500320CC4 /* LaunchScreen.storyboard */; };
+		E2A0DB9C1D587F4500320CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A0DB941D587F4500320CC4 /* Main.storyboard */; };
+		E2A0DB9D1D587F4500320CC4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2A0DB961D587F4500320CC4 /* Info.plist */; };
+		E2A0DB9E1D587F4500320CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0DB981D587F4500320CC4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E263CB9A1D3A35A00024C495 /* LEAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E263CB9D1D3A35A00024C495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E263CB9F1D3A35A00024C495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E263CBA21D3A35A00024C495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E263CBA41D3A35A00024C495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E263CBA71D3A35A00024C495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E263CBA91D3A35A00024C495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E263CBB11D3A44DD0024C495 /* keyAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "keyAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		E263CB9A1D3A35A00024C495 /* LLAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A0DB8D1D5877A000320CC4 /* LEAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEAlertController.swift; sourceTree = "<group>"; };
+		E2A0DB901D587F4500320CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2A0DB911D587F4500320CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2A0DB931D587F4500320CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2A0DB951D587F4500320CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2A0DB961D587F4500320CC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A0DB981D587F4500320CC4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +41,8 @@
 		E263CB911D3A35A00024C495 = {
 			isa = PBXGroup;
 			children = (
+				E2A0DB8F1D587F4500320CC4 /* LLAlertControllerDemo */,
 				E2A0DB8C1D5877A000320CC4 /* Class */,
-				E263CB9C1D3A35A00024C495 /* keyAnimation */,
 				E263CB9B1D3A35A00024C495 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,23 +50,9 @@
 		E263CB9B1D3A35A00024C495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E263CB9A1D3A35A00024C495 /* LEAlertController.app */,
+				E263CB9A1D3A35A00024C495 /* LLAlertController.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E263CB9C1D3A35A00024C495 /* keyAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				E263CB9D1D3A35A00024C495 /* AppDelegate.swift */,
-				E263CB9F1D3A35A00024C495 /* ViewController.swift */,
-				E263CBA11D3A35A00024C495 /* Main.storyboard */,
-				E263CBA41D3A35A00024C495 /* Assets.xcassets */,
-				E263CBA61D3A35A00024C495 /* LaunchScreen.storyboard */,
-				E263CBA91D3A35A00024C495 /* Info.plist */,
-				E263CBB11D3A44DD0024C495 /* keyAnimation-Bridging-Header.h */,
-			);
-			path = keyAnimation;
 			sourceTree = "<group>";
 		};
 		E2A0DB8C1D5877A000320CC4 /* Class */ = {
@@ -77,12 +63,25 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		E2A0DB8F1D587F4500320CC4 /* LLAlertControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0DB901D587F4500320CC4 /* AppDelegate.swift */,
+				E2A0DB911D587F4500320CC4 /* Assets.xcassets */,
+				E2A0DB921D587F4500320CC4 /* LaunchScreen.storyboard */,
+				E2A0DB941D587F4500320CC4 /* Main.storyboard */,
+				E2A0DB961D587F4500320CC4 /* Info.plist */,
+				E2A0DB981D587F4500320CC4 /* ViewController.swift */,
+			);
+			path = LLAlertControllerDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E263CB991D3A35A00024C495 /* LEAlertController */ = {
+		E263CB991D3A35A00024C495 /* LLAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LEAlertController" */;
+			buildConfigurationList = E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LLAlertController" */;
 			buildPhases = (
 				E263CB961D3A35A00024C495 /* Sources */,
 				E263CB971D3A35A00024C495 /* Frameworks */,
@@ -92,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = LEAlertController;
+			name = LLAlertController;
 			productName = keyAnimation;
-			productReference = E263CB9A1D3A35A00024C495 /* LEAlertController.app */;
+			productReference = E263CB9A1D3A35A00024C495 /* LLAlertController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LEAlertController" */;
+			buildConfigurationList = E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LLAlertController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E263CB991D3A35A00024C495 /* LEAlertController */,
+				E263CB991D3A35A00024C495 /* LLAlertController */,
 			);
 		};
 /* End PBXProject section */
@@ -135,9 +134,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E263CBA81D3A35A00024C495 /* LaunchScreen.storyboard in Resources */,
-				E263CBA51D3A35A00024C495 /* Assets.xcassets in Resources */,
-				E263CBA31D3A35A00024C495 /* Main.storyboard in Resources */,
+				E2A0DB9D1D587F4500320CC4 /* Info.plist in Resources */,
+				E2A0DB9C1D587F4500320CC4 /* Main.storyboard in Resources */,
+				E2A0DB9A1D587F4500320CC4 /* Assets.xcassets in Resources */,
+				E2A0DB9B1D587F4500320CC4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E263CBA01D3A35A00024C495 /* ViewController.swift in Sources */,
-				E263CB9E1D3A35A00024C495 /* AppDelegate.swift in Sources */,
+				E2A0DB9E1D587F4500320CC4 /* ViewController.swift in Sources */,
+				E2A0DB991D587F4500320CC4 /* AppDelegate.swift in Sources */,
 				E2A0DB8E1D5877A000320CC4 /* LEAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,20 +157,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E263CBA11D3A35A00024C495 /* Main.storyboard */ = {
+		E2A0DB921D587F4500320CC4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E263CBA21D3A35A00024C495 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E263CBA61D3A35A00024C495 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E263CBA71D3A35A00024C495 /* Base */,
+				E2A0DB931D587F4500320CC4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2A0DB941D587F4500320CC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A0DB951D587F4500320CC4 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,11 +264,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = keyAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LLAlertControllerDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsl.www.keyAnimation;
-				PRODUCT_NAME = LEAlertController;
-				SWIFT_OBJC_BRIDGING_HEADER = "keyAnimation/keyAnimation-Bridging-Header.h";
+				PRODUCT_NAME = LLAlertController;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -278,18 +279,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = keyAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LLAlertControllerDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsl.www.keyAnimation;
-				PRODUCT_NAME = LEAlertController;
-				SWIFT_OBJC_BRIDGING_HEADER = "keyAnimation/keyAnimation-Bridging-Header.h";
+				PRODUCT_NAME = LLAlertController;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LEAlertController" */ = {
+		E263CB951D3A35A00024C495 /* Build configuration list for PBXProject "LLAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E263CBAA1D3A35A00024C495 /* Debug */,
@@ -298,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LEAlertController" */ = {
+		E263CBAC1D3A35A00024C495 /* Build configuration list for PBXNativeTarget "LLAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E263CBAD1D3A35A00024C495 /* Debug */,

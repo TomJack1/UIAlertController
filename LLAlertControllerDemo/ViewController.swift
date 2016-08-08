@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let shet = LEAlertController.init(title: "标题党", message: "content lable", alertType: LEAlertControllerStyle.ActionSheet)
         let  cancle = LEAlertAction.init(title: "取消", styleAction: LEAlertActionStyle.Cancel, handler: nil)
          shet.addAction(cancle)
-        let b1 = LEAlertAction.init(title: "btn1", styleAction: LEAlertActionStyle.Default) { (view) in
+        let b1 = LEAlertAction.init(title: "进入界面（模态）", styleAction: LEAlertActionStyle.Default) { (view) in
             NSLog("btnAction1");
             let vc = UIViewController.init()
             vc.view.backgroundColor = UIColor.whiteColor()
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         }
         shet.addAction(b4)
         
-        let b5 = LEAlertAction.init(title: "btn5", styleAction: LEAlertActionStyle.Default) { (view) in
+        let b5 = LEAlertAction.init(title: "弹出alertView", styleAction: LEAlertActionStyle.Default) { (view) in
             NSLog("btnAction5");
             self.alertShow()
         }
