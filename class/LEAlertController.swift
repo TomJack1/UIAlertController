@@ -145,6 +145,7 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
     private var dataSource: Array<LEAlertAction>?
     private var blankBtn:UIButton?
     private var cancelBtn: UIButton?
+    private var cancelAlertAction:LEAlertAction?
     private var footView:UIView?
     private var titleHeight:CGFloat!
     //SheetViewDefine
@@ -243,9 +244,9 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
             lableTitle.textAlignment = .Center
             lableTitle.text = self.titleStr
             headView.addSubview(lableTitle)
-//            let ViewLine = UIView.init(frame: CGRectMake(0, headView.frame.origin.y - 0.5, headView.frame.size.width, 0.5))
-//            ViewLine.backgroundColor = UIColor.init(red: 238/255, green: 241/255, blue: 243/255, alpha: 1)
-//            headView.addSubview(ViewLine)
+            //            let ViewLine = UIView.init(frame: CGRectMake(0, headView.frame.origin.y - 0.5, headView.frame.size.width, 0.5))
+            //            ViewLine.backgroundColor = UIColor.init(red: 238/255, green: 241/255, blue: 243/255, alpha: 1)
+            //            headView.addSubview(ViewLine)
             self.titleHeight = headNomalHeight;
             if self.contentStr != nil {
                 let contentlable = UILabel.init(frame: CGRectMake(0, headNomalHeight, headView.frame.width, 21))
@@ -259,7 +260,7 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
                 contentlable.frame = CGRectMake(8, headNomalHeight, headView.frame.width - 16, size.height + 6);
                 
                 if size.height > 21 {
-                     contentlable.textAlignment = .Left
+                    contentlable.textAlignment = .Left
                 }
                 headView.frame = CGRectMake(0, 0, ScreenWIDTH, headNomalHeight + contentlable.frame.height + 8)
                 
@@ -289,9 +290,9 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
                 }
                 headView.frame = CGRectMake(0, 0, ScreenWIDTH, headNomalHeight + contentlable.frame.height + 8)
                 
-//                let ViewLine = UIView.init(frame: CGRectMake(0, headView.frame.origin.y - 0.5, headView.frame.size.width, 0.5))
-//                ViewLine.backgroundColor = UIColor.init(red: 238/255, green: 241/255, blue: 243/255, alpha: 1)
-//                headView.addSubview(ViewLine)
+                //                let ViewLine = UIView.init(frame: CGRectMake(0, headView.frame.origin.y - 0.5, headView.frame.size.width, 0.5))
+                //                ViewLine.backgroundColor = UIColor.init(red: 238/255, green: 241/255, blue: 243/255, alpha: 1)
+                //                headView.addSubview(ViewLine)
                 self.titleHeight = headView.frame.height;
                 self.tableView?.tableHeaderView = headView
             }
@@ -371,7 +372,7 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
             if cancelBtn != nil {
                 return
             }
-            
+            self.cancelAlertAction = action
             let footView = UIView.init(frame: CGRectMake(0, ScreenHEIGHT - footViewHeight, ScreenWIDTH, footViewHeight))
             footView.backgroundColor = UIColor.init(red: 238/255, green: 241/255, blue: 243/255, alpha: 1)
             self.view.addSubview(footView)
@@ -405,10 +406,10 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
             self.tableView?.reloadData()
             
             var r: CGRect = (self.tableView?.frame)!
-//            let titleHeight: CGFloat = self.titleHeight
-//            if self.titleStr != nil {
-//            titleHeight = self.titleHeight
-//            }
+            //            let titleHeight: CGFloat = self.titleHeight
+            //            if self.titleStr != nil {
+            //            titleHeight = self.titleHeight
+            //            }
             
             
             
@@ -455,12 +456,14 @@ class LEAlertController: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     func sheetViewCancelAction(btn: UIButton?) {
         
-        
-        
         if self.alertType == .ActionSheet {
-            
             dispatch_async(dispatch_get_main_queue()) {
-                self.dismissViewControllerAnimated(true, completion: nil)
+                self.dismissViewControllerAnimated(true, completion: {[weak self] Void in
+                    if self?.cancelAlertAction != nil
+                    {
+                        self?.cancelAlertAction!.handBlock!(view: self?.cancelAlertAction)
+                    }
+                    })
             }
         }else if self.alertType == .Alert {
             
@@ -482,9 +485,9 @@ extension LEAlertController: UIViewControllerTransitioningDelegate,UIViewControl
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self.preasentType = .Preasent
-    
+        
         return self
-       
+        
     }
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self.preasentType = .Dismiss
@@ -558,11 +561,11 @@ extension LEAlertController: UIViewControllerTransitioningDelegate,UIViewControl
                     transitionContext.completeTransition(true)
             })
         }
-    
+        
     }
     
     func alertShowAnimateTransition(transitionContext: UIViewControllerContextTransitioning)  {
-    
+        
         let containerView:UIView = transitionContext.containerView()!
         containerView.backgroundColor = UIColor.clearColor()
         if self.preasentType == .Preasent {
@@ -573,7 +576,7 @@ extension LEAlertController: UIViewControllerTransitioningDelegate,UIViewControl
             
             
             let alerViewa: AnimaAlertView = toViewController.alertView!
-             alerViewa.transform = CGAffineTransformMakeScale(0.3, 0.3)
+            alerViewa.transform = CGAffineTransformMakeScale(0.3, 0.3)
             alerViewa.alpha = 0
             toViewController.bgView.alpha = 0
             UIView.animateWithDuration(transitionDuration(transitionContext), animations: {
